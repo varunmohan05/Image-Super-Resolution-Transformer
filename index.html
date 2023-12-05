@@ -55,7 +55,7 @@
 <div class="container">
 <div class="row">
 <div class="col justify-content-center text-center">
-<h2>An Analysis of "Activating More Pixels in Image Super-Resolution Transformer"</h2>
+<h2>An Analysis of "Activating More Pixels in Image Super-Resolution Transformer", CVPR 2023</h2>
 </div>
 </div>
 <div class="row">
@@ -76,7 +76,8 @@
 <section id="section1">
 <h2>Paper Overview</h2>
 <h5><b>Problem: Image Super Resolution</b></h5>
- <p>We input a low-resolution image and ask the network to generate a higher-resolution image.</p>
+ <p>Single image super-resolution is a classic and challenging problem in computer vision. It has practical applications in various domains, including medical imaging, satellite imagery, and enhancing the quality of digital photographs.<br>
+	 We input a low-resolution image and ask the network to generate a higher-resolution image.</p>
 	<div class="image-container">
   <div class="image-box">
     <img height="203" src="./imgs/LowRes.png" width="170">
@@ -101,7 +102,7 @@
 </div>
 
 <h5><b>Solution: Hybrid Attention Transformer (HAT)</b></h5>
-<p> CNN-based methods have long dominated the Image super-resolution (SR) field. Recently Transformers have attracted attention. SwinIR a transformer-based model, obtained a breakthrough improvement in this task.
+<p> CNN-based methods have long dominated the Image super-resolution (SR) field. Recently Transformers have attracted attention. SwinIR a transformer-based model, obtained a breakthrough.
 Despite the success, "Why Transformer is better than CNN" remains a mystery. An intuitive explanation is that transformers can benefit from the self-attention mechanism and utilize long-range information. Interestingly, authors find that SwinIR does NOT exploit more input pixels than CNN-based methods. The proposed HAT (Hybrid Attention Transformer achieves higher pixel activation as shown below.</p>
 <img height="350" src="./imgs/LAM.png" width="700">
 <br><br>
@@ -155,19 +156,25 @@ Despite the success, "Why Transformer is better than CNN" remains a mystery. An 
 <section id="section8">
 <h3>References</h3>
 
-<p><a name="bottou-1990">[1]</a> <a href="https://papers.baulab.info/Bottou-1990.pdf"
-  >L&eacute;on Bottou and Patrick Gallinari.
-  <em>A framework for the cooperation of learning algorithms.</em></a>
-  Advances in neural information processing systems 3 (1990).
-</p>
 <p><a name="Activating More Pixels in Image Super-Resolution Transformer">[1]</a> <a href="https://arxiv.org/pdf/2205.04437.pdf"
   >Xiangyu Chen, Xintao Wang, Jiantao Zhou, Yu Qiao, Chao Dong.
-  <em>Activating More Pixels in Image Super-Resolution Transformer</em></a>
+  <em>"Activating More Pixels in Image Super-Resolution Transformer", CVPR 2023</em></a>
 </p>
-<p><a name="Super Resolution on Arm NPU">[1]</a> <a href="https://community.arm.com/arm-community-blogs/b/ai-and-ml-blog/posts/super-resolution-on-arm-npu"
+<p><a name="Super Resolution on Arm NPU">[2]</a> <a href="https://community.arm.com/arm-community-blogs/b/ai-and-ml-blog/posts/super-resolution-on-arm-npu"
   >Alex Shang, Yabin Zheng, Mary Bennion, and Alex Avramenko.
   <em>Super Resolution on Arm NPU</em></a>
-  About image super-resolution.
+</p>
+<p><a name="Super-Resolution from a Single Image">[3]</a> <a href="https://www.wisdom.weizmann.ac.il/~vision/single_image_SR/files/single_image_SR.pdf"
+  >Daniel Glasner, Shai Bagon, Michal Irani.
+  <em>"Super-Resolution from a Single Image", ICCV, 2009</em></a>
+</p>
+<p><a name="Learning a Deep Convolutional Network for Image Super-Resolution">[4]</a> <a href="https://arxiv.org/pdf/1501.00092.pdf"
+  >Chao Dong, Chen Change Loy, Kaiming He, and Xiaoou Tang.
+  <em>"Learning a Deep Convolutional Network for Image Super-Resolution", ECCV, 2014</em></a>
+</p>
+<p><a name="SwinIR: Image Restoration Using Swin Transformer">[5]</a> <a href="https://openaccess.thecvf.com/content/ICCV2021W/AIM/papers/Liang_SwinIR_Image_Restoration_Using_Swin_Transformer_ICCVW_2021_paper.pdf"
+  >Jingyun Liang, Jiezhang Cao, Guolei Sun, Kai Zhang, Luc Van Gool, Radu Timofte.
+  <em>"SwinIR: Image Restoration Using Swin Transformer", ICCV 2021</em></a>
 </p>
 </section>
 	
