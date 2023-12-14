@@ -203,6 +203,26 @@ Hence HAT provides companies like Tencent with an improved approach for implemen
 
 <section id="section6">
 <h2>Follow-on Research</h2>
+<p> This paper introduces the idea of activating more pixels to get better image reconstructions. Further research could be done to take this idea forward and produce even better-looking image reconstructions. 
+
+<div class="image-container">
+  <div class="image-box">
+    <img height="203" src="./imgs/HATFIR_architecture.png" width="170">
+    <div class="text-box">
+      <p>(a) Residual Hybrid Attention Group (RHAG) in the HAT. (b) Swin Fourier Transformer Block (SFTB) in HAT FIR. The convolution (3×3) in RHAG of HAT is replaced with SFB to get the SFTB.</p>
+    </div>
+  </div>
+	
+  <div class="image-box">
+    <img height="300" src="./imgs/HATFIR_table.png" width="250">
+    <div class="text-box">
+      <p>Quantitative comparison with HAT</p>
+    </div>
+  </div>
+</div>
+	
+	A very recent paper by D. Zhang et al named "SwinFIR: Revisiting the SwinIR with Fast Fourier Convolution and Improved Training for Image Super-Resolution" aims to do this. The propose SwinFIR and HATFIR by replacing Fast Fourier Convolution (FFC) components, which have the image-wide receptive field leading to further improvement in the efficiency of capturing global
+information. 
 <p>Some papers might contribute to advancing the state of the art in image super-resolution, either by proposing new Transformer architectures, introducing alternative neural network designs, or applying the Transformer model to new types of images and challenges. They all follow up on the HAT paper by exploring different facets of the problem space and proposing innovative solutions that could potentially enhance or improve upon the results obtained by the Hybrid Attention Transformer.</p>
 <div class="row">
   <div class="col-md-6">
