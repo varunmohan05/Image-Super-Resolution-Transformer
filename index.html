@@ -37,7 +37,7 @@
       text-align: center;
     }
 
-	#section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8 {
+	#section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9 {
       margin-bottom: 100px; 
     }
   </style>
@@ -70,7 +70,9 @@
 	<li><a href="#section5">Industry Applications</a></li>
 	<li><a href="#section6">Follow-on Research</a></li>
 	<li><a href="#section7">Peer Review</a></li>
-	<li><a href="#section8">References</a></li>
+	<li><a href="#section8">Code Implementation and Experiments</a></li>
+	<li><a href="#section9">References</a></li>
+	
 </ul>
 
 <section id="section1">
@@ -257,8 +259,28 @@ A very recent paper by D. Zhang et al. named "SwinFIR: Revisiting the SwinIR wit
 </div>
 </section>
 
-
 <section id="section8">
+<h2>Code Implementation and Experiments</h2>
+<h4>Experiment Idea</h4>
+<p>We ran inference on 6 of the latest Super Resolution deep learning models (2 pre-trained model variations of SwinIR, HAT, SwinFIR each). Then we computed the PSNR and SSIM of the generated images and assigned them an opinion score. All the experiments produced 4x scaled images. Results are reported in Table I,II,III,V.</p>
+	<div class="image-container">
+  <div class="image-box">
+    <img height="480" src="./imgs/table1_2.png" width="450">
+    
+  </div>
+	
+  <div class="image-box">
+    <img height="480" src="./imgs/table3_4.png" width="450">
+  </div>
+		<div class="text-box">
+      <p>State-of-the-art methods performance comparison on comparable performance. PSNR and SSIM. HAT-L performs best and HATFIR has comparable performance</p>
+    </div>
+</div>
+	
+
+</section>
+	
+<section id="section9">
 <h3>References</h3>
 
 <p><a name="Activating More Pixels in Image Super-Resolution Transformer">[1]</a> <a href="https://arxiv.org/pdf/2205.04437.pdf"
