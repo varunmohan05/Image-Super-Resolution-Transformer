@@ -234,7 +234,7 @@ A very recent paper by D. Zhang et al. named "SwinFIR: Revisiting the SwinIR wit
 <h2>Peer Review</h2>
 <h4>Reviewer 1 - Wenyu Zhang </h4>
 <div class="peer-review">
-    <p><strong>Rate:</strong> 7/10 (Would Accept)</p>
+    <p><strong>Rate:</strong> 7/10 (would accept)</p>
     <p><strong>Strengths:</strong> Demonstrates significant improvement over existing methods, with extensive experimental validation.</p>
     <p><strong>Weaknesses:</strong> Future work could benefit from a discussion on model complexity and a broader comparative analysis.</p>
     <p><strong>Overall:</strong> Offers a substantial contribution to Transformer applications in super-resolution, meriting publication with minor revisions suggested.</p>
@@ -262,12 +262,18 @@ A very recent paper by D. Zhang et al. named "SwinFIR: Revisiting the SwinIR wit
 <section id="section8">
 <h2>Code Implementation and Experiments</h2>
 <h4>Experiment Idea</h4>
-<p>We ran inference on 6 of the latest Super Resolution deep learning models (2 pre-trained model variations of SwinIR, HAT, SwinFIR each). Then we computed the PSNR and SSIM of the generated images and assigned them an opinion score. All the experiments produced 4x scaled images.
+<p>We ran inference on 6 of the latest Super Resolution deep learning models (2 pre-trained model variations of SwinIR, HAT, SwinFIR each). Then we computed the PSNR and SSIM of the generated images and assigned them an opinion score. All the experiments produced 4x scaled images. We used the code from official GitHub repos provided by the respective authors (3 repos linked in references).
 <br>
-We have used 4 different data sets, namely Set5 [10], Set14 [11], PIRM [12], Urban [13]. In total 59 images (5 images from Set5, 14 images from Set14, first 20 images from PIRM, and first 20 images from Urban) were used to conduct each of the experiments.
+We have used 4 different data sets, namely Set5, Set14, PIRM, and Urban. In total 59 images (5 images from Set5, 14 images from Set14, first 20 images from PIRM, and first 20 images from Urban) were used to conduct each of the experiments.
 <br>
 PSNR, SSIM and Opinion scores were used to evaluate each super resolved image. PSNR and SSIM were computed on Y axis. Opinion scores are in the range of 1 to 10. It was assigned by taking the average of the ratings provided by both of us. The score represents the degree of resemblance between the generated image and ground truth image to a human eye. A score of 1 would mean it completely resembles the bicubic interpolated image and 10 would mean it completely resembles the ground truth image.
 <br>Results are reported in Table I,II,III,V.</p>
+<h4>Novel Contribution</h4>
+<ul>
+	<li>Performed tests on 6 latest SR models. Also reported results on PIRM dataset which was not previously included by any of the original papers</li>
+	<li>Added an Opinion Score metric for model evaluation</li>
+	<li>Conducted experiments that hint towards HAT-FIR being the most efficient Single Image Super Resolution model as of 2023</li>
+</ul>
 <h4>Results</h4>
 	<div class="image-container">
   <div class="image-box">
@@ -364,6 +370,19 @@ PSNR, SSIM and Opinion scores were used to evaluate each super resolved image. P
   >Jinjin Gu and Chao Dong.
   <em> "Interpreting super-resolution networks with local attribution maps", In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, pages 9199-9208, 2021.</em></a>
 </p>
+<p><a name="GitHub Repo - HAT">[9]</a> <a href="https://github.com/XPixelGroup/HAT"
+  >Xiangyu Chen, Xintao Wang, Jiantao Zhou, Yu Qiao, Chao Dong.
+  <em> GitHub Repo - HAT </em></a>
+</p>
+<p><a name="GitHub Repo - SwinIR">[10]</a> <a href="https://github.com/JingyunLiang/SwinIR"
+  >Jingyun Liang, Jiezhang Cao, Guolei Sun, Kai Zhang, Luc Van Gool, Radu Timofte.
+  <em> GitHub Repo - SwinIR </em></a>
+</p>
+<p><a name="GitHub Repo - SwinFIR">[8]</a> <a href="https://github.com/Zdafeng/SwinFIR"
+  >Dafeng Zhang, Feiyu Huang, Shizhuo Liu, Xiaobing Wang, Zhezhu Jin.
+  <em> GitHub Repo - SwinFIR </em></a>
+</p>
+
 	  
 </section>
 	
